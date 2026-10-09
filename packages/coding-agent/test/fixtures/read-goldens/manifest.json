@@ -311,20 +311,22 @@
     "reason": "An explicit range with truncation=last retains the end of the selected window."
   },
   {
-    "bucket": "surface",
+    "bucket": "changed",
     "phase": 1,
     "name": "prompt-read-default",
     "request": { "path": "{FIXTURE}/prose.txt" },
     "settings": { "read.summarize.enabled": false },
-    "hashLines": [true, false]
+    "hashLines": [true, false],
+    "reason": "Tool description prompt read.md changed ellipsis from ... to … (Unicode ellipsis character)."
   },
   {
-    "bucket": "surface",
+    "bucket": "changed",
     "phase": 1,
     "name": "prompt-read-head",
     "request": { "path": "{FIXTURE}/prose.txt", "truncation": "head" },
     "settings": { "read.summarize.enabled": false, "read.truncation": "head" },
-    "hashLines": [true, false]
+    "hashLines": [true, false],
+    "reason": "Tool description prompt read.md changed ellipsis from ... to … (Unicode ellipsis character)."
   },
   {
     "bucket": "surface",

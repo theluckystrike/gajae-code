@@ -31,8 +31,8 @@ type Variant = "hl" | "plain";
 
 const EXPECTED_MANIFEST_COUNTS: Record<Bucket, number> = {
 	invariant: 29,
-	changed: 8,
-	surface: 4,
+	changed: 10,
+	surface: 2,
 };
 const EXPECTED_MANIFEST_NAMES: Record<Bucket, readonly string[]> = {
 	invariant: [
@@ -75,8 +75,10 @@ const EXPECTED_MANIFEST_NAMES: Record<Bucket, readonly string[]> = {
 		"local-bare-both",
 		"giant-last-partial",
 		"range-tail",
+		"prompt-read-default",
+		"prompt-read-head",
 	],
-	surface: ["prompt-read-default", "prompt-read-head", "docs-read-flow-line", "cli-read-help"],
+	surface: ["docs-read-flow-line", "cli-read-help"],
 };
 const EXPECTED_PHASE_ZERO_GOLDEN_FILES = 58;
 type Request = { path: string; [key: string]: unknown };
